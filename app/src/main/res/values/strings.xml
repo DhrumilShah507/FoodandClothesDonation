@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">DONATE APPLICATION</string>
+
+    <string name="name_lable">NAME</string>
+    <string name="email_pro">EMAIL</string>
+    <string name="phone_no_pro">PHONE NO</string>
+
+    <string-array name="FoodType">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Snacks</item>
+        <item>Dinner</item>
+        <item>Beverages</item>
+        <item>Fruits</item>
+        <item>Dairy Foods</item>
+    </string-array>
+
+    <string-array name="ClothType">
+        <item>Men Wear</item>
+        <item>Women Wear</item>
+        <item>Kids Wear</item>
+    </string-array>
+
+    <string-array name="STATES">
+        <item>GUJARAT</item>
+    </string-array>
+
+    <string-array name="District">
+        <item>SURAT</item>
+        <item>AHEMDABAD</item>
+        <item>ANAND</item>
+    </string-array>
+
+    <string-array name="Units1">
+        <item>items</item>
+        <item>Dishes</item>
+        <item>ml</item>
+        <item>Lit</item>
+        <item>grams</item>
+        <item>Kilo grams</item>
+    </string-array>
+
+    <string-array name="Units2">
+        <item>item</item>
+        <item>ml</item>
+        <item>Lit</item>
+        <item>grams</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataDisplayActivity">
+
+
+
+
+    <!--de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:civ_border_color="#000"
+        app:civ_border_width="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/Title_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:text="Title:"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleImage"
+        app:layout_constraintStart_toStartOf="@+id/circleImage"
+        app:layout_constraintTop_toBottomOf="@+id/circleImage"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NameLabel_"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Name:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/EmailLabel_"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NameLabel_"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Email:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/AddLabel_"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EmailLabel_"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Add:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Name_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/NameLabel_"
+            android:text="Name:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Email_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/EmailLabel_"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/EmailLabel_"
+            android:text="Email:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Add_"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/AddLabel_"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/AddLabel_"
+            android:text="Add:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/FoodNameLabel_"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Item Name:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/FoodTypeLabel_"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FoodNameLabel_"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Item Type:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PickUpDateLabel_"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FoodTypeLabel_"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Pickup Date:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PickUpTimeLabel_"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PickUpDateLabel_"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Pickup Time:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/QuantityLabel_"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PickUpTimeLabel_"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Quantity:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/Ftype_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Name_txt"
+                android:layout_alignTop="@+id/FoodTypeLabel_"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/FoodTypeLabel_"
+                android:text="FoodType:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/Fname_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name_txt"
+        android:layout_alignStart="@+id/Name_txt"
+        android:text="FoodName:"
+        android:textColor="#DC000000"
+        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/FoodNameLabel_" />
+
+            <TextView
+                android:id="@+id/Date_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Name_txt"
+                android:layout_alignTop="@+id/PickUpDateLabel_"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/PickUpDateLabel_"
+                android:text="PickUpDate:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Time_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Name_txt"
+                android:layout_alignTop="@+id/PickUpTimeLabel_"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/PickUpTimeLabel_"
+                android:text="PickUpTime:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Que_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/QuantityLabel_"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/QuantityLabel_"
+                android:text="Quantity:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DistLabel_"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="District:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/StaLabel_"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DistLabel_"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="State:"
+            android:textColor="#DC000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/Dist_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name_txt"
+            android:layout_alignStart="@+id/Name_txt"
+            android:text="District:"
+            android:textColor="#DC000000"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/DistLabel_"/>
+
+            <TextView
+                android:id="@+id/State_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Name_txt"
+                android:layout_alignTop="@+id/StaLabel_"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-0dp"
+                android:layout_toEndOf="@+id/StaLabel_"
+                android:text="State:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DescriptionLabel_"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Description:"
+                android:textColor="#DC000000"
+                android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Desc_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name_txt"
+            android:layout_alignStart="@+id/Name_txt"
+            android:text="Description:"
+            android:textColor="#DC000000"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/DescriptionLabel_"/>
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>
+    </ScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch Location"
+            android:layout_gravity="center"
+            android:id="@+id/fatchLocationBtn"/>
+
+
+</LinearLayout>
